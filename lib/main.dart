@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.lightBlue[500],
           body: SafeArea(
             child : Column(
+              mainAxisAlignment : MainAxisAlignment.center,
               children: [ 
                    CircleAvatar(
                     backgroundImage: AssetImage('images/Mhmd.jpg'),
@@ -53,51 +54,50 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     )
                    ,),
-                   Container(
+                   SizedBox(
+                    width: 200,
+                    height: 20,
+                    child: Divider(
+                      color: Colors.white38,
+                    ),
+                   ),
+                   Card(
                     margin: EdgeInsets.all(20),
-                    padding: EdgeInsets.all(10),
-                    color: Colors.white,
-                    child: Row(
-                      children: [
-                        Icon(
+                    color: const Color.fromARGB(255, 136, 13, 130),
+                    child: ListTile(
+                      leading:   Icon(
                           Icons.phone_android_sharp,
                           color: Colors.cyan[700],
                         ),
-                        SizedBox(
-                          width: 15.0,
-                        ),
-                        Text(
+                        title:  Text(
                           '00249100614580',
                           style :TextStyle(
                             fontSize: 20,
                             fontFamily: 'CairoPlay',
                           ),
-                        ),
-                      ],
+                        ),                      
                     ),
                     ),
-                    Container(
-                      color: Color.fromARGB(255, 255, 255, 255),
+                    Card(
+                      color: Color.fromARGB(255, 170, 12, 149),
                       margin: EdgeInsets.all(20),
-                      padding: EdgeInsets.all(10),
-                      child:   Row(
-                        children: [
-                          Icon(
+                      child:   ListTile(
+                        
+                      leading:     Icon(
                             Icons.email,
                             color: Colors.cyan[700],
                           ),
-                        SizedBox(width: 15),
-                        Text('mohamedbadreldeen23@gmail.com',
+                      
+                       title:  Text('mohamedbadreldeen23@gmail.com',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.black87,
                         ),
                         ),
-                        ],
+                        
                       ),
                     ),
-                ],
-
+              ],
                ),              
              ),
           ),
