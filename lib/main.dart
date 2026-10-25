@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
                    CircleAvatar(
                     backgroundImage: AssetImage('images/Mhmd.jpg'),
                     radius: 50.0,
-
                    ),
                    Text('محمد بدر الدين',
                     style: TextStyle(
@@ -53,8 +52,30 @@ class MyApp extends StatelessWidget {
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     )
-                   ,)
+                   ,),
+                   Container(
+                    color: Colors.white,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.phone_android_sharp,
+                          color: Colors.cyan[700],
+                        ),
+                        SizedBox(
+                          width: 15.0,
+                        ),
+                        Text(
+                          '00249100614580',
+                          style :TextStyle(
+                            fontSize: 20,
+fontFamily: 'CairoPlay',
+                          ),
+                        ),
+                      ],
+                    ),
+                    ),
                 ],
+
                ),              
              ),
           ),
