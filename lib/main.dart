@@ -54,6 +54,8 @@ class MyApp extends StatelessWidget {
                     )
                    ,),
                    Container(
+                    margin: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(10),
                     color: Colors.white,
                     child: Row(
                       children: [
@@ -68,11 +70,31 @@ class MyApp extends StatelessWidget {
                           '00249100614580',
                           style :TextStyle(
                             fontSize: 20,
-fontFamily: 'CairoPlay',
+                            fontFamily: 'CairoPlay',
                           ),
                         ),
                       ],
                     ),
+                    ),
+                    Container(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      margin: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
+                      child:   Row(
+                        children: [
+                          Icon(
+                            Icons.email,
+                            color: Colors.cyan[700],
+                          ),
+                        SizedBox(width: 15),
+                        Text('mohamedbadreldeen23@gmail.com',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black87,
+                        ),
+                        ),
+                        ],
+                      ),
                     ),
                 ],
 
